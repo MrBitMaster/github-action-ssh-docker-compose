@@ -19,6 +19,7 @@ unknown docker-images. It is entirely built from Dockerfile on top of
  * `docker_compose_prefix` - Project name passed to compose. Each docker
    container will have this prefix in name.
  * `docker_compose_filename` - Path to the docker-compose file in the repository.
+ * `pull_before_up` - Set "true" if you need to take docker pull before running docker-compose up .
  * `use_stack` - Use docker stack instead of docker-compose.
 
 # Usage example
