@@ -20,6 +20,7 @@ unknown docker-images. It is entirely built from Dockerfile on top of
    container will have this prefix in name.
  * `docker_compose_filename` - Path to the docker-compose file in the repository.
  * `pull_before_up` - Set "true" if you need to take docker pull before running docker-compose up .
+ * `service_name` - Specify "service_name" from the docker-compose file
  * `use_stack` - Use docker stack instead of docker-compose.
 
 # Usage example

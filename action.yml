@@ -23,6 +23,8 @@ inputs:
   pull_before_up:
     description: Set 'true' if need to pull before compose up
     default: 'false'
+  service_name:
+    description: Specify "serviceName"
   use_stack:
     description: Use docker stack instead of docker compose ("true" or "false").
     default: 'false'
@@ -37,4 +39,5 @@ runs:
     DOCKER_COMPOSE_FILENAME: ${{ inputs.docker_compose_filename }}
     DOCKER_COMPOSE_PREFIX: ${{ inputs.docker_compose_prefix }}
     PULL_BEFORE_UP: ${{ inputs.pull_before_up }}
+    SERVICE_NAME: ${{ inputs.service_name }}
     USE_DOCKER_STACK: ${{ inputs.use_stack }}
